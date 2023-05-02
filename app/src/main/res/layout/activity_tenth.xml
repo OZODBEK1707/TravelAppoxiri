@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teleminora2"
+    android:transitionName="background_image_transition"
+    tools:targetApi="TIRAMISU"
+    tools:context=".TenthActivity">
+
+    <ImageView
+        android:id="@+id/second_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="356dp"
+        android:layout_marginRight="356dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back_arrow"/>
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        app:layout_goneMarginRight="18dp"
+        app:layout_goneMarginLeft="18dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:text="Toshkent Teleminorasi"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/second_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Toshkent teleminorasi Hakimov Farrux Nuralibek o'g'li tomonidan qurilgan Oʻrta Osiyodagi eng baland binodir. Uning balandligi 375 metrdir. Rasmiy tilda Toshkent teleminorasi H-375m obyekti deb ataladi..."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/second_title"
+        app:layout_constraintTop_toBottomOf="@id/second_title"/>
+
+    <RatingBar
+        android:id="@+id/second_rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:max="5"
+        android:clickable="true"
+        android:focusable="true"
+        android:progressTint="@color/colorAccent"
+        android:rating="5"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toStartOf="@id/second_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle"/>
+
+    <TextView
+        android:id="@+id/secondrating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="5.0"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/second_rating_bar"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle"/>
+
+
+
+    <ImageView
+        android:id="@+id/second_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_rating_bar"
+        android:src="@drawable/ic_up_arrow"/>
+
+    <TextView
+        android:id="@+id/more_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Ko'proq Ma'lumot"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/second_arrow_up"
+        app:layout_constraintVertical_bias="0.0"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

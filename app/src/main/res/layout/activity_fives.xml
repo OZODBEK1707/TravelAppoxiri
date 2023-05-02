@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    tools:context=".FivesActivity">
+
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="412dp"
+        android:layout_height="291dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/registon2"
+        tools:targetApi="TIRAMISU"/>
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        app:layout_constraintEnd_toEndOf="@id/header_background"
+        app:layout_constraintTop_toTopOf="@id/header_background"
+        android:src="@drawable/ic_down_arrow"/>
+
+    <ScrollView
+        android:id="@+id/third_Scroll_View"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Registon Maydoni"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/third_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="5"
+                    android:stepSize="0.5"
+                    tools:targetApi="TIRAMISU"/>
+
+                <TextView
+                    android:id="@+id/third_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="5.0"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="Haqida"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Registon so'zi qumli joy degan ma'noni anglatadi. Registon maydonida huerda hukmdorlarning farmonlari o'qilgan, turli bayramlar va tadbirlar o'tkazilgan.
+
+Ushbu me’moriy majmua Ulugʻbek, Tillaqori, va Sherdor madrasalaridan tashkil topgan. Madrasalarning devorlari koshinli bezaklarga ega, madrasa eshiklariga esa Qur'on oyatlari va suralari bitilgan.
+
+Markaziy Osiyodagi me'morchilikning eng noyob namunalarini o'z ichiga olgan Registon maydoni 2001 yilda YuNESKO tomonidan Jahon merosi ro'yxatiga kiritilgan.Dastlabki 1417—1420-yillarda [Ulugʻbek madrasasi] bunyod etilib, keyinchalik qarshisiga — maydonning sharqiy qismida Ulugʻbek xonaqosi (1424-yil), shimoliy qismiga Mirzoyi karvonsaroyi, janubiga Alika Koʻkaldosh juma masjidi (1430-yil) bunyod etilgan, yonida esa yogʻochdan xotamkori uslubida Masjidi Muqatta va Abusaid madrasasi qurilgan. 1420—1440-yillarida Registon hashamatli meʼmoriy ansamblga aylangan. XVII asrda Samarqand hokimi Yalangtoʻsh Bahodir vayrona holatdagi Ulugʻbek xonaqosi oʻrniga Sherdor madrasasini (1619—1635/36), Mirzoyi karvonsaroyi oʻrniga Tillakori masjidini (1646/47—1659/60) qurdirgan. Registon maydoni oʻzining rang-barang koshinkori bezaklari; naqshinkori peshtoqlari, ulkan gumbazlari bilan Markaziy Osiyo meʼmorchligining noyob yodgorligi hisoblanadi"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/venue_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Joy Turi"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/type_of_view_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Tarixiy Obida"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/roadmap_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/blue"
+                android:drawableEnd="@drawable/ic_steps"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Qanday Borish Mumkin "/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

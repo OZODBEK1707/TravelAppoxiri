@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+    <string name="one">One</string>
+    <string name="view">View</string>
+    <string name="worth">Worth</string>
+    <string name="a">a</string>
+    <string name="thousand_words">Thousand Words</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+</resources>
